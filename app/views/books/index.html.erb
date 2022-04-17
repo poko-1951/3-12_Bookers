@@ -22,7 +22,8 @@
   </div>
   <div class="create">
     <h2>New Book</h2>
-    <%= form_with model: @book , url: "/books", method: :post do |f|%>
+    <%= form_with model: Book.new, url: "/books", method: :post do |f|%>
+    <!--model: @bookだとエラーが発生するが、model: Book.newだと発生しない…なぜ？？-->
       <label>Title</label>
       <%= f.text_field :title%>
 
