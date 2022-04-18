@@ -1,3 +1,5 @@
+
+
 table{
   isplay: table-header-group;
   vertical-align: middle;
@@ -29,20 +31,18 @@ strong{
 }
 
 // edit
-
-
-.link{
-  color:#000;
+.title, .body_text, .button{
+  margin-bottom:10px;
 }
 
-.line{
-
+.field{
+  padding: 1px 2px;
 }
 
-.edit{
-  color:#000;
+.area{
+  padding: 2px 2px;
 }
 
-.back{
-  color:#666666;
+.submit{
+  padding: 1px 6px;
 }
