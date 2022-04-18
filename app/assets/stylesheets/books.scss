@@ -7,3 +7,42 @@ table{
   text-indent: initial;
   border-spacing: 2px;
 }
+
+p{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+
+
+strong{
+  font-weight:bold;
+}
+
+
+
+// show
+.notice{
+  color: green;
+}
+
+// edit
+
+
+.link{
+  color:#000;
+}
+
+.line{
+
+}
+
+.edit{
+  color:#000;
+}
+
+.back{
+  color:#666666;
+}

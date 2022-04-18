@@ -1,19 +1,19 @@
 <% if flash[:notice] %>
- <p><%= notice %></p>
+ <p class="notice"><%= notice %></p>
 <% end %>
-
-
 
 <body>
   <p>
-    <stong>Title:</stong>
+    <strong>Title:</strong>
     <%= @book.title %>
   </p>
   <p>
-    <stong>Body:</stong>
+    <strong>Body:</strong>
     <%= @book.body %>
   </p>
-  <%= link_to "Edit",edit_book_path(@book.id) %>
-  <p>|</p>
-  <%= link_to "Back",books_path %>
+  <div class="button">
+    <span class="edit"><%= link_to "Edit",edit_book_path(@book.id) %></span>
+    <span>|</span>
+    <span class="back"><%= link_to "Back",books_path %></span>
+  </div>
 </body>

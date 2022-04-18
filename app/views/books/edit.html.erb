@@ -19,7 +19,9 @@
 
     <%= f.submit "Update Book"%>
   <% end %>
-  <%= link_to "Show",book_path(@book.id) %>
-  <p>|</p>
-  <%= link_to "Back",books_path %>
+  <div class="button">
+    <p class="link"><%= link_to "Show",book_path(@book.id) %></p>
+    <p class="line">|</p>
+    <p class="link"><%= link_to "Back",books_path %></p>
+  </div>
 </body>
