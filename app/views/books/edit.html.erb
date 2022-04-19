@@ -13,14 +13,14 @@
 
   <%= form_with model: @book, url: book_path(@book.id), method: :patch do |f|%>
   <div class="title">
-    <label class=<%= ' title_error' if @book.errors.any? %>>Title</label>
-    <div class=<%= ' field_error' if @book.errors.any? %>>
+    <label class=<%= 'title_error' if @book.errors.any?&&@book.title.blank? %>>Title</label>
+    <div class=<%= 'field_error' if @book.errors.any?&&@book.title.blank? %>>
       <%= f.text_field :title, class:"field"%>
     </div>
   </div>
   <div class="body_text">
-    <label class=<%= ' body_error' if @book.errors.any? %>>Body</label>
-    <div class=<%= ' area_error' if @book.errors.any? %>>
+    <label class=<%= 'body_error' if @book.errors.any?&&@book.body.blank? %>>Body</label>
+    <div class=<%= 'area_error' if @book.errors.any?&&@book.body.blank? %>>
       <%= f.text_area :body, class:"area"%>
     </div>
   </div>
